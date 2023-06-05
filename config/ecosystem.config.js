@@ -20,7 +20,7 @@ module.exports = {
       host: "rizkyathoriq.me",
       ref: "origin/master",
       repo: "git@github.com:rizkyathoriq19/latiahn-be.git",
-      path: "/bin/www",
+      path: "/var/www/myapp-3",
       "pre-deploy-local": "",
       "post-deploy":
         "npm install && pm2 reload ecosystem.config.js --env production",
