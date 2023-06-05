@@ -4,7 +4,20 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "jest"
+    "test": "jest",
+    "pm2": "pm2 start ./config/ecosystem.config.js --env production"
+  },
+  "deploy": {
+    "production": {
+      "user": "rizkyathoriq19",
+      "host": "192.168.68.103",
+      "ref": "origin/master",
+      "repo": "git@github.com:rizkyathoriq19/latiahn-be.git",
+      "path": "/var/www/myapp-3",
+      "pre-deploy-local": "",
+      "post-deploy": "npm install && pm2 reload ecosystem.config.js --env production",
+      "pre-setup": ""
+    }
   },
   "jest": {
     "testEnvironment": "node",
