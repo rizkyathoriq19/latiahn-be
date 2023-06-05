@@ -8,7 +8,7 @@ module.exports = {
       max_memory_restart: "1G", // Batas memori untuk restart aplikasi
       env: {
         NODE_ENV: "production", // Environment production
-        PORT: 3808, // Port aplikasi
+        PORT: 3306, // Port aplikasi
       },
     },
   ],
