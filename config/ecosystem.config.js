@@ -15,7 +15,7 @@ module.exports = {
   deploy: {
     production: {
       user: "rizkyathoriq19", // Pengguna SSH pada server tujuan
-      host: "192.168.68.103", // Alamat IP atau hostname server tujuan
+      host: "127.0.0.1", // Alamat IP atau hostname server tujuan
       ref: "origin/main", // Branch atau referensi git yang akan didistribusikan
       repo: "git@github.com:rizkyathoriq19/latiahn-be.git", // URL repositori Git
       path: "/var/www/latiahn-be", // Jalur di server tujuan untuk menyimpan aplikasi
