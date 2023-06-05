@@ -12,11 +12,11 @@ module.exports = {
 
   deploy: {
     production: {
-      user: "SSH_USERNAME",
-      host: "SSH_HOSTMACHINE",
+      user: "rizkyathoriq19",
+      host: "192.168.68.103",
       ref: "origin/master",
-      repo: "GIT_REPOSITORY",
-      path: "DESTINATION_PATH",
+      repo: "git@github.com:rizkyathoriq19/latiahn-be.git",
+      path: "www.rizkyathoriq.me",
       "pre-deploy-local": "",
       "post-deploy":
         "npm install && pm2 reload ecosystem.config.js --env production",
