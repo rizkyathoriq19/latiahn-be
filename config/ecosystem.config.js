@@ -18,7 +18,7 @@ module.exports = {
       host: "192.168.68.103", // Alamat IP atau hostname server tujuan
       ref: "origin/main", // Branch atau referensi git yang akan didistribusikan
       repo: "git@github.com:rizkyathoriq19/latiahn-be.git", // URL repositori Git
-      path: "/bin", // Jalur di server tujuan untuk menyimpan aplikasi
+      path: "/bin/www", // Jalur di server tujuan untuk menyimpan aplikasi
       "post-deploy":
         "npm install && pm2 reload ecosystem.config.js --env production", // Perintah yang akan dijalankan setelah proses deploy selesai
     },
