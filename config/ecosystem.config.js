@@ -11,7 +11,7 @@ module.exports = {
       user: "rizkyathoriq19",
       host: "rizkyathoriq.me",
       ref: "origin/master",
-      repo: "git@github.com:rizkyathoriq19/latiahn-be.git",
+      repo: "https://github.com/rizkyathoriq19/latiahn-be.git",
       path: "/var/www/myapp-3",
       "pre-deploy-local": "",
       "post-deploy":
