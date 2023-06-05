@@ -10,9 +10,12 @@
   "deploy": {
     "production": {
       "user": "rizkyathoriq19",
-      "host": "rizkyathoriq.me",
+      "host": [
+        "192.168.68.103"
+      ],
+      "ssh_options": "StrictHostKeyChecking=no",
       "ref": "origin/master",
-      "repo": "https://github.com/rizkyathoriq19/latiahn-be.git",
+      "repo": "git@github.com:rizkyathoriq19/latiahn-be.git",
       "path": "/var/www/myapp-3",
       "pre-deploy-local": "",
       "post-deploy": "npm install && pm2 reload ecosystem.config.js --env production",
