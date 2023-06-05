@@ -4,16 +4,12 @@ module.exports = {
       script: "app.js",
       watch: ".",
     },
-    {
-      script: "./service-worker/",
-      watch: ["./service-worker"],
-    },
   ],
 
   deploy: {
     production: {
       user: "rizkyathoriq19",
-      host: "192.168.68.103",
+      host: "125.160.101.13",
       ref: "origin/master",
       repo: "git@github.com:rizkyathoriq19/latiahn-be.git",
       path: "www.rizkyathoriq.me",
