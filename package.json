@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "jest"
+    "test": "jest",
+    "doc": "jsdoc -c ./config/jsdoc.json"
   },
   "jest": {
     "testEnvironment": "node",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "jest": "^29.5.0",
+    "jsdoc": "^4.0.2",
     "supertest": "^6.3.3"
   },
   "keywords": [],
